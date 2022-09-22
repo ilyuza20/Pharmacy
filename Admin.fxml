@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apteka.AdminController">
+    <children>
+      <BorderPane layoutX="122.0" layoutY="67.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <MenuBar prefHeight="27.0" prefWidth="607.0" BorderPane.alignment="CENTER">
+              <menus>
+                  <Menu mnemonicParsing="false" text="Каталоги">
+                     <items>
+                        <MenuItem fx:id="posItem1" mnemonicParsing="false" onAction="#selectCatalogTab" text="Каталог товаров" />
+                        <MenuItem fx:id="zakazItem" mnemonicParsing="false" onAction="#selectOrdersTab" text="Каталог заказов" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Учет лекарств">
+                  <items>
+                    <MenuItem fx:id="posItem" mnemonicParsing="false" onAction="#selectNewTovar" text="Поступление" />
+                        <MenuItem fx:id="rasItem" mnemonicParsing="false" onAction="#selectRashodTab" text="Расход" />
+                        <MenuItem fx:id="spisItem" mnemonicParsing="false" onAction="#selectDeleteProduct" text="Списание" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab fx:id="catalogtab" text="Товары">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                <Tab fx:id="orderstab" text="Заказы" />
+                  <Tab fx:id="rastab" text="Расход товара" />
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

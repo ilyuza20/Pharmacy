@@ -1,0 +1,4 @@
+1/Nurofen/12/200.0/Stomachache
+2/Paratsetamol/15/350.0/Headache
+3/Mezim/17/200.0/Stomachache
+4/Kagotsel/10/350.0/Virus
